@@ -43,7 +43,7 @@ class ReceiverFragment : Fragment() {
 
         //3-1
         //setFragmentResultListener:프래그먼트의 결과를 수신하여 듣는 리스너 메서드 추가
-        //파라미터 키 : request
+        //요청 전체에 대한 키 : request / 요청에 담겨있는 여래 개의 값 중 한 개의 값 키 : valueKey
         //값을 보내는 측 프래그먼트에서 request라는 키로 값을 보내면 이 리스너 안의 코드 실행됨
         setFragmentResultListener("request"){ key, bundle ->
             //3-2
